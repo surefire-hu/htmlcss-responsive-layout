@@ -108,7 +108,6 @@ Griglia
 
 .col-50 {
     width: calc((100% / 2) - 12px);
-    height: 15rem;
 }
 
 .row {
@@ -159,6 +158,59 @@ Griglia
 }
 
 /* 
+Planning section
+*/
+
+#planning {
+    background-color: var(--bg-color-violet);
+}
+
+#planning .container .col-50 h2 {
+    padding: 150px 0 50px;
+}
+
+#planning .container .col-50:first-child {
+    color: var(--text-color-2);
+    margin: 0 0 0 100px;
+    padding: 20px;
+}
+
+#planning .container.flex {
+    align-items: end;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+#planning .container .col-50:last-child {
+    color: black;
+    background-color: var(--text-color-2);
+    padding: 40px;
+    border-radius: 50px;
+}
+
+#planning .container div.col-50 {
+    width: 50%;
+}
+
+#planning .container .col-50:last-child .image {
+    margin-bottom: 24px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#planning .container .col-50:last-child .box-text h3,
+#planning .container .col-50:last-child .box-text p {
+    margin-bottom: 24px;
+}
+
+#planning .container .col-50 .box-text i {
+    background-color: var(--bg-color-violet);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+/* 
 Media query 
 */
 
@@ -198,5 +250,28 @@ Media query
     }
     .row {
         margin: 20px 0;
+    }
+
+    /* 
+    Planning
+    */
+
+    #planning .flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #planning .container.flex .col-50 {
+        width: 100%;
+    }
+
+    #planning .container.flex .col-50:first-child,
+    #planning .container.flex .col-50:last-child {
+        margin: 0;
+    }
+
+    #planning .container.flex .col-50:first-child img,
+    #planning .container.flex .col-50:first-child .box-text > p {
+        margin: 0;
     }
 }
