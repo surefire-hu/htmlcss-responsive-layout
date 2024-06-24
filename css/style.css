@@ -382,6 +382,71 @@ About
 }
 
 /* 
+Footer
+*/
+#free {
+    background-color: var(--bg-color-violet);
+    color: var(--text-color-2);
+}
+
+#free .container,
+#footer-bottom .container {
+    max-width: 50%;
+}
+
+#free .container .box-text h4 {
+    color: var(--text-color-free);
+}
+
+#free .container .box-text .btn {
+    background-color: var(--text-color-2);
+    color: var(--bg-color-violet);
+    padding: 15px 50px;
+    margin: 20px 0;
+}
+
+#free .container .box-text div.privacy {
+    font-size: 10px;
+}
+
+#free .container .box-text .privacy > i {
+    font-size: 4px;
+}
+
+.box-text {
+    padding: 40px 0;
+}
+
+.box-text span {
+    color: #C7C5F0;
+}
+
+.maker {
+    text-decoration: underline;
+}
+
+.box-text .maker {
+    color: var(--text-color-2);
+}
+
+#footer-bottom {
+    background-color: var(--bg-color-footer);
+    color: white;
+}
+
+#footer-bottom .privacy {
+    font-size: 12px;
+}
+
+#footer-bottom .container .maker {
+    color: var(--bg-color-violet);
+}
+
+#footer-bottom p {
+    padding: 30px 0;
+}
+
+/* 
 Media query 
 */
 
