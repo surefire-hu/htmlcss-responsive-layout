@@ -185,6 +185,7 @@ Planning section
     color: black;
     background-color: var(--text-color-2);
     padding: 40px;
+    margin: 0 100px 0 0;
     border-radius: 50px;
 }
 
@@ -207,7 +208,60 @@ Planning section
     background-color: var(--bg-color-violet);
     display: inline-block;
     padding: 20px;
+    border-radius: 50%;
+}
+
+/* 
+Partner section
+*/
+
+#testimonials .container .row.flex {
+    padding-right: 20px;
+}
+
+#testimonials .col-80,
+#about .col-80 {
+    flex-grow: 1;
+}
+
+#testimonials .container .row h2 {
+    color: var(--bg-color-violet);
+    padding: 16px 0;
+}
+
+#testimonials .container .row.flex {
+    background-color: var(--bg-color-violet);
     border-radius: 50px;
+    color: var(--text-color-2);
+    align-items: center;
+}
+
+#testimonials .container .row.flex .image {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+    flex-shrink: 0;
+}
+
+.image1 {
+    background-image: url('/img/testimonial1.jpg');
+}
+
+.image2 {
+    background-image: url('/img/testimonial2.jpg');
+}
+
+.image3 {
+    background-image: url('/img/testimonial3.jpg');
+}
+
+#testimonials .container .row .col-80 p,
+#testimonials .container .row.text-center {
+    margin-bottom: 30px;
 }
 
 /* 
@@ -218,18 +272,37 @@ Media query
     .toggle-bar {
         display: inline-block;
     }
+
     .nav-links {
         display: none;
     }
+
     .w-70, .w-30 {
         width: 100%;
     }
+
     .image {
         height: auto;
     }
+
     .row {
         margin: 15px 0;
     }
+
+    #testimonials .container .flex{
+        flex-wrap: wrap;
+    } 
+    
+    #testimonials .container .row.flex {
+        width: 100%;
+        justify-content: center;
+        padding: 20px;
+        text-align: center;
+    } 
+
+    #testimonials .container .row .col-80{
+        width: 100%;
+    } 
 }
 
 @media screen and (max-width: 992px){
@@ -237,17 +310,21 @@ Media query
         max-width: 960px;
         margin: 0 auto;
     }
+
     .toggle-bar {
         display: inline-block;
         font-size: 30px;
     }
+
     .nav-links {
         display: none;
     }
+
     .col-50 {
         width: 100%;
         height: auto;
     }
+
     .row {
         margin: 20px 0;
     }
