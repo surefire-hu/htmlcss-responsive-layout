@@ -27,6 +27,32 @@ General
 body {
     font-family: "PT Sans", sans-serif;
 }
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 72px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+}
 /* 
 Start
 */
@@ -68,7 +94,6 @@ a,
 }
 
 #nav-bar .flex ul > li a {
-    text-decoration:none;
     color: var(--text-color-2);
 }
 
@@ -132,7 +157,6 @@ Griglia
 
 #grid .container .row .w-70 a {
     margin-top: 40px;
-    text-decoration: none;
 }
 
 #grid .container h3 {
@@ -265,45 +289,52 @@ Partner section
 }
 
 /* 
-Media query 
+Benefits
 */
 
-@media screen and (max-width: 576px){
-    .toggle-bar {
-        display: inline-block;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    .w-70, .w-30 {
-        width: 100%;
-    }
-
-    .image {
-        height: auto;
-    }
-
-    .row {
-        margin: 15px 0;
-    }
-
-    #testimonials .container .flex{
-        flex-wrap: wrap;
-    } 
-    
-    #testimonials .container .row.flex {
-        width: 100%;
-        justify-content: center;
-        padding: 20px;
-        text-align: center;
-    } 
-
-    #testimonials .container .row .col-80{
-        width: 100%;
-    } 
+#benefits {
+    background-color: var(--bg-color-violet);
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
+
+#benefits .container .row h2 {
+    color: var(--text-color-2);
+    padding-bottom: 75px;
+}
+
+#demo-app .container .flex,
+#benefits .container .flex {
+    flex-wrap: wrap;
+}
+
+#benefits .flex {
+    gap: 15px;
+}
+
+#benefits .row .w-30 h4,
+#benefits .row .w-30 h3 {
+    color: var(--bg-color-violet);
+    margin-bottom: 20px;
+}
+
+#benefits .row .w-30 {
+    width: calc((100% - 30px) / 3);
+    background-color: var(--text-color-2);
+    border-radius: 30px;
+    color: var(--text-color-3);
+}
+
+#benefits .btn {
+    background-color: var(--bg-color-violet);
+    color: var(--text-color-2);
+    padding: 5px 40px;
+    margin: 30px 0;
+}
+
+/* 
+Media query 
+*/
 
 @media screen and (max-width: 992px){
     .container {
@@ -350,5 +381,58 @@ Media query
     #planning .container.flex .col-50:first-child img,
     #planning .container.flex .col-50:first-child .box-text > p {
         margin: 0;
+    }
+
+    /* 
+    Benefits
+    */
+
+    #benefits .container .flex > .w-30 {
+        width: calc((100% - 15px) / 2);
+    }
+}
+
+@media screen and (max-width: 576px){
+    .toggle-bar {
+        display: inline-block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .w-70, .w-30 {
+        width: 100%;
+    }
+
+    .image {
+        height: auto;
+    }
+
+    .row {
+        margin: 15px 0;
+    }
+
+    #testimonials .container .flex{
+        flex-wrap: wrap;
+    } 
+    
+    #testimonials .container .row.flex {
+        width: 100%;
+        justify-content: center;
+        padding: 20px;
+        text-align: center;
+    } 
+
+    #testimonials .container .row .col-80{
+        width: 100%;
+    } 
+
+    /* 
+    Benefits
+    */
+
+    #benefits .container .flex > .w-30 {
+        width: 100%;
     }
 }
