@@ -341,11 +341,12 @@ About
     flex-shrink: 0;
     position: relative;
     color: var(--bg-color-violet);
-    margin: 80px 100px 0 0;
+    margin: 4rem 5.25rem 0 0;
+    padding: 1rem 1rem 0 0;
 }
 
 #about .col-80 {
-    margin: 80px 0 0 100px;
+    margin: 5rem 0 0 6.25rem;
 }
 
 #about .col-20 img {
@@ -354,7 +355,7 @@ About
 
 #about .col-20 > i {
     position: absolute;
-    font-size: 70px;
+    font-size: 3rem;
     top: 0;
     right: 0;
 }
@@ -569,5 +570,9 @@ Media query
     
     #about .container .row .col-20 img {
         margin: 20px 0;
+    }
+
+    #about .col-20 > i  {
+        font-size: 5rem;
     }
 }
