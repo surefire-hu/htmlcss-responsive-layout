@@ -333,6 +333,55 @@ Benefits
 }
 
 /* 
+About
+*/
+
+#about .col-20 {
+    width: 20%;
+    flex-shrink: 0;
+    position: relative;
+    color: var(--bg-color-violet);
+    margin: 80px 100px 0 0;
+}
+
+#about .col-80 {
+    margin: 80px 0 0 100px;
+}
+
+#about .col-20 img {
+    border-radius: 50%;
+}
+
+#about .col-20 > i {
+    position: absolute;
+    font-size: 70px;
+    top: 0;
+    right: 0;
+}
+
+#about .col-80 {
+    padding-right: 40px;
+    color: var(--bg-color-violet);
+}
+
+#about p {
+    margin-top: 30px;
+    color: var(--text-color-3);
+}
+
+#about .container .row .col-20 .btn {
+    font-size: 12px;
+    background-color: var(--bg-color-violet);
+    color: var(--text-color-2);
+    margin: 20px 0;
+    padding: 5px 10px;
+}
+
+#about .container .row .col-20 .btn > i {
+    margin-right: 5px;
+}
+
+/* 
 Media query 
 */
 
@@ -434,5 +483,26 @@ Media query
 
     #benefits .container .flex > .w-30 {
         width: 100%;
+    }
+
+    /* 
+    About
+    */
+
+    #about .container .flex {
+        flex-wrap: wrap;
+    }
+
+    #about .container .row .col-80 {
+        width: 100%;
+        margin: 0;
+    }
+
+    #about .container .row .col-20 {
+        width: 60%;
+    }
+    
+    #about .container .row .col-20 img {
+        margin: 20px 0;
     }
 }
